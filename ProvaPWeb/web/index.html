@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Farmacia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ControleFarmacia" method="POST">
+            <table>
+                <tr>
+                    <td>Codigo</td>
+                    <td><input type="text" name="codigo"></td>
+                </tr>
+                <tr>
+                    <td>Preço</td>
+                    <td><input type="text" name="preco"></td>
+                </tr>
+                <tr>
+                    <td>Quantidade:</td>
+                    <td><input type="text" name="qtd"></td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>
+                        <select name="tipo">
+                            <option value="normal">Normal</option>
+                            <option value="naoControlado">Não Controlado</option>
+                            <option value="controlado">Controlado</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" name="button" value="OK">
+        </form>
+    </body>
+</html>
